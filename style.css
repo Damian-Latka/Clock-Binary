@@ -22,9 +22,9 @@ body{
 
 .binary-clock{
     display: flex;
+    flex: 3 0 24vh;
     flex-direction: row;
     justify-content: center;
-    height: 24vh;
 }
 
 .column{
@@ -52,7 +52,19 @@ body{
 
 .digital-clock{
     display: flex;
+    flex: 3 0 10vh;
     justify-content: center;
     margin:2vh;
     font-size: 7vh;
+}
+
+.socials{
+    display:flex;
+    flex: 0 2 auto;
+    width: 100%;
+}
+
+.social{
+    display: flex;
+    flex: 1 4 auto;
 }
