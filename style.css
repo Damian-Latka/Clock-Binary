@@ -5,30 +5,26 @@
 }
 
 body{
-    width: 100%;
-    height: 100vh;
     color:#fff;
     font-family: monospace;
 }
 
 .content{
+    background-color: rgb(26, 32, 53);
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(26, 32, 53);
+    min-height: 100vh;
 }
 
 .binary-clock{
     display: flex;
-    flex: 3 0 24vh;
     flex-direction: row;
     justify-content: center;
 }
 
 .column{
-    height: 100%;
     float: left;
     display: flex;
     flex-direction: column-reverse;
@@ -36,35 +32,44 @@ body{
 }
 
 .column:nth-child(2), .column:nth-child(4){
-    margin-right: 1vh;
+    margin-right: 1em;
 }
 
 .cell{
-    width: 5vh;
-    height: 5vh;
+    width: 4em;
+    height: 4em;
     background: rgb(221, 200, 200);
     border-radius: 50%;
 }
 
 .cell:not(:first-child){
-    margin-bottom: 1vh;
+    margin-bottom: 1em;
 }
 
 .digital-clock{
     display: flex;
-    flex: 3 0 10vh;
     justify-content: center;
-    margin:2vh;
-    font-size: 7vh;
+    margin: .5em;
+    font-size: 4rem;
 }
 
 .socials{
     display:flex;
-    flex: 0 2 auto;
+    align-items: center;
+
+    position: absolute;
     width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    bottom: 0;
+}
+
+.socials strong{
+    width: 100%;
+    transform: translateX(-1.5em);
+    text-align: center;
 }
 
 .social{
     display: flex;
-    flex: 1 4 auto;
+    width: 3em;
 }

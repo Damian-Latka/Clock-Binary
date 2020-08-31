@@ -2,6 +2,7 @@ let time, hours, minutes, seconds;
 let digital_clock = document.getElementById("digital-clock");
 let turned_off = "rgba(53,36,121,1)";
 let turned_on = "rgba(231,227,247,1)";
+
 getTime();
 //interval is responsible for refreshing the time every 200ms
 setInterval(getTime, 200);
@@ -22,11 +23,11 @@ function getTime(){
         seconds = '0' + seconds;
     }
     digital_clock.innerHTML = `${hours}:${minutes}:${seconds}`;
-    xd();
+    displayClockInBinary();
 }
 
 
-function xd(){
+function displayClockInBinary(){
     let num;
     let max;
     //show hours on binary clock
